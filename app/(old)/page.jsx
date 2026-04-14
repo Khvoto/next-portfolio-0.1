@@ -527,7 +527,7 @@ export default function Page() {
       <main>
         <div id="MainText" class="text-container">
           <h1 class="title"><span class="accessibility">Jens Österqvist</span></h1>
-          <p><span class="accessibility">Välkommen till min portfolio</span></p>
+          <p><span class="accessibility">Välkommen till min portfolio!!</span></p>
           <p><span class="accessibility">Jag brinner för programmering, teknik och naturen.</span></p>
           <p><span class="accessibility">Denna portfolio är tänkt som en levande sådan, och kommer fyllas på med nya projekt med tiden.</span>
           </p>
