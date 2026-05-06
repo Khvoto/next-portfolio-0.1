@@ -1,17 +1,17 @@
 // components/Footer.tsx
 export default function Footer() {
 	return (
-		<footer className="w-full h-screen bg-neutral-950 border-t border-white/5 py-20 px-12 flex items-center justify-center">
+		<footer className="w-full h-screen bg-background border-t border-white/5 py-20 px-12 flex items-center justify-center">
 			<div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10">
 				<div className="space-y-8">
 					<h3 className="text-3xl font-bold">Get in touch.</h3>
 					<div className="space-y-2 text-white/60">
-						<p>hello@example.com</p>
-						<p>+46 (0) 70 123 45 67</p>
+						<p>osterqvist@outlook.com</p>
+						<p>+46 (0) 76 802 63 66</p>
 					</div>
 					<div className="flex gap-4">
-						<a href="#" className="underline decoration-white/20 hover:decoration-white">GitHub</a>
-						<a href="#" className="underline decoration-white/20 hover:decoration-white">LinkedIn</a>
+						<a href="https://github.com/Khvoto" className="underline decoration-white/20 hover:decoration-white">GitHub</a>
+						<a href="https://www.linkedin.com/in/jens-%C3%B6sterqvist-8a554a1b0/" className="underline decoration-white/20 hover:decoration-white">LinkedIn</a>
 					</div>
 				</div>
 				

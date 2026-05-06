@@ -2,22 +2,22 @@
 'use client';
 import Image from 'next/image';
 import {useScroll} from '@/src/lib/useScroll';
+import Carousel from "@/src/components/views/carousel";
 
 export default function MainPage() {
 	const scrollY = useScroll();
 	
-	// As user scrolls down, opacity drops.
-	// At 200px scroll, the content is fully invisible.
-	const fadeOut = Math.max(0, 1 - scrollY / 300)
+	// As user scrolls down, opacity shifts.
+	const fadeOut = Math.max(0, 1 - scrollY / 150)
 	const fadeIn = 1 - fadeOut
 	
 	return (
 		<section className="relative min-w-screen min-h-[150vh]">
 			<div
-				className="sticky top-0 h-screen flex items-center w-full mx-autopx-20 transition-opacity duration-75}"
+				className=" pt-20 min-h-screen flex items-center w-full mx-autopx-20 transition-opacity duration-75}"
 			>
 				
-				<div className="grid grid-cols-1 sm:grid-cols-12 sm:w-[90%] place-items-center items-center max-w-7xlw-full">
+				<div className="grid grid-cols-1 sm:grid-cols-12 sm:w-[90%] place-items-center items-center h-screen max-w-7xlw-full">
 					{/* Left Side */}
 					<div className="space-y-6 min-w-75 max-w-2xl md:w-[50%] relative flex h-125 col-start-1 col-span-8  row-start-1 z-10">
 						<div className="absolute w-full space-y-6" style={{
@@ -61,7 +61,9 @@ export default function MainPage() {
 						<div className="absolute inset-0 bg-linear-to-br from-transparent via-transparent to-bg-background pointer-events-none" />
 					</div>
 				</div>
+				
 			</div>
+			<Carousel/>
 		</section>
 	);
 }
